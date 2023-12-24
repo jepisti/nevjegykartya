@@ -16,17 +16,17 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Scaffold(
+      home: const Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
             children: <Widget>[
-              const CircleAvatar(
+              CircleAvatar(
                 radius: 50.0,
                 //backgroundColor: Colors.red,
                 backgroundImage: AssetImage('images/jaromi1.jpg'),
               ),
-              const Text(
+              Text(
                 'Járomi István',
                 style: TextStyle(
                   fontSize: 30.0,
@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              const Text(
+              Text(
                 'Flutter developer',
                 style: TextStyle(
                     fontSize: 15.0,
@@ -45,56 +45,57 @@ class MyApp extends StatelessWidget {
                     //fontWeight: FontWeight.bold,
                     ),
               ),
-              Container(
+              Card(
                 color: Colors.blueGrey,
-                padding: const EdgeInsets.all(10.0),
-                margin: const EdgeInsets.symmetric(
+                //padding: const EdgeInsets.all(10.0),
+                margin: EdgeInsets.symmetric(
                   vertical: 10.0,
                   horizontal: 25.0,
                 ),
-                child: const Row(
-                  children: [
-                    Icon(
-                      Icons.phone,
-                      color: Colors.white,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      '+36 20 436 6835',
-                      style: TextStyle(
+                child: Padding(
+                  padding: EdgeInsets.all(10.0),
+                  child: Row(
+                    children: [
+                      Icon(
+                        Icons.phone,
                         color: Colors.white,
-                        fontSize: 20.0,
                       ),
-                    ),
-                  ],
+                      SizedBox(
+                        width: 10.0,
+                      ),
+                      Text(
+                        '+36 20 436 6835',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20.0,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.blueGrey,
-                padding: const EdgeInsets.all(10.0),
-                margin: const EdgeInsets.symmetric(
+                //padding: const EdgeInsets.all(10.0),
+                margin: EdgeInsets.symmetric(
                   vertical: 10.0,
-                  horizontal: 25.0,
+                  horizontal: 20.0,
                 ),
-                child: const Row(
-                  children: [
-                    Icon(
+                child: Padding(
+                  padding: EdgeInsets.all(10.0),
+                  child: ListTile(
+                    leading: Icon(
                       Icons.email,
                       color: Colors.white,
                     ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
+                    title: Text(
                       'jaromi.istvan@gmail.com',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 20.0,
                       ),
                     ),
-                  ],
+                  ),
                 ),
               ),
             ],
