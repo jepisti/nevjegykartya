@@ -48,9 +48,9 @@ class MyApp extends StatelessWidget {
               ),
               SizedBox(
                 height: 20.0,
-                width: 200.0,
+                width: 220.0,
                 child: Divider(
-                  color: Colors.green,
+                  color: Colors.white,
                 ),
               ),
               Card(
@@ -72,7 +72,7 @@ class MyApp extends StatelessWidget {
                         width: 10.0,
                       ),
                       Text(
-                        '+36 20 436 6835',
+                        '+36 20 436 xxxx',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 20.0,
@@ -97,7 +97,7 @@ class MyApp extends StatelessWidget {
                       color: Colors.white,
                     ),
                     title: Text(
-                      'jaromi.istvan@gmail.com',
+                      'jaromixxxxxx@gmail.com',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 20.0,
