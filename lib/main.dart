@@ -16,17 +16,17 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Scaffold(
+      home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
             children: <Widget>[
-              CircleAvatar(
+              const CircleAvatar(
                 radius: 50.0,
                 //backgroundColor: Colors.red,
                 backgroundImage: AssetImage('images/jaromi1.jpg'),
               ),
-              Text(
+              const Text(
                 'Járomi István',
                 style: TextStyle(
                   fontSize: 30.0,
@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Text(
+              const Text(
                 'Flutter developer',
                 style: TextStyle(
                     fontSize: 15.0,
@@ -44,6 +44,58 @@ class MyApp extends StatelessWidget {
                     letterSpacing: 2.0
                     //fontWeight: FontWeight.bold,
                     ),
+              ),
+              Container(
+                color: Colors.blueGrey,
+                padding: const EdgeInsets.all(10.0),
+                margin: const EdgeInsets.symmetric(
+                  vertical: 10.0,
+                  horizontal: 25.0,
+                ),
+                child: const Row(
+                  children: [
+                    Icon(
+                      Icons.phone,
+                      color: Colors.white,
+                    ),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text(
+                      '+36 20 436 6835',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20.0,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                color: Colors.blueGrey,
+                padding: const EdgeInsets.all(10.0),
+                margin: const EdgeInsets.symmetric(
+                  vertical: 10.0,
+                  horizontal: 25.0,
+                ),
+                child: const Row(
+                  children: [
+                    Icon(
+                      Icons.email,
+                      color: Colors.white,
+                    ),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text(
+                      'jaromi.istvan@gmail.com',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20.0,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
