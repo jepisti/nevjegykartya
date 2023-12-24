@@ -30,9 +30,20 @@ class MyApp extends StatelessWidget {
                 'Járomi István',
                 style: TextStyle(
                   fontSize: 30.0,
+                  fontFamily: 'Pacifico',
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                 ),
+              ),
+              Text(
+                'Flutter developer',
+                style: TextStyle(
+                    fontSize: 15.0,
+                    fontFamily: 'Monoton',
+                    color: Colors.greenAccent,
+                    letterSpacing: 2.0
+                    //fontWeight: FontWeight.bold,
+                    ),
               ),
             ],
           ),
